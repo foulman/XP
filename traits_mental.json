@@ -1,0 +1,82 @@
+[
+  {
+    "type": "mutation",
+    "id": "XP_CANNIBAL",
+    "name": { "str": "XP - Cannibalism" },
+    "description": "Face it, postapocalyptic life is pretty brutal and hard, you've grown tired of being such a squeamish little wuss and now don't mind indulging in long pig now and again.",
+    "points": 1,
+	"valid": false,
+    "flags": [ "CANNIBAL" ]
+  },
+  {
+    "type": "mutation",
+    "id": "XP_NOVICE_PARKOUR",
+    "name": { "str": "Parkour Novice" },
+    "points": 1,
+    "description": "You're skilled at clearing obstacles; terrain like railings or counters are as easy for you to move on as solid ground.",
+    "starting_trait": false,
+    "valid": false,
+    "movecost_obstacle_modifier": 0.75
+  },
+  {
+    "type": "mutation",
+    "id": "XP_FASTREADER",
+    "name": { "str": "XP - Fast Reader" },
+    "points": 1,
+    "description": "You're a quick reader, and can get through books a lot faster than most.",
+    "reading_speed_multiplier": 0.9,
+    "starting_trait": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "XP_ORGANIZED",
+    "name": { "str": "XP - Organized" },
+    "points": 1,
+    "description": "You pack things very efficiently!  You can retrieve things from containers 20% faster.",
+    "obtain_cost_multiplier": 0.8,
+    "starting_trait": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "XP_SLEEPLESS",
+    "name": { "str": "XP - Sleep Adaptation I" },
+    "points": 1,
+    "description": "You have adapted to a more dangerous life in the apocalypse, you now need less sleep than the average person.",
+    "types": [ "SLEEP" ],
+    "starting_trait": false,
+    "fatigue_modifier": -0.10
+  },
+  {
+    "type": "mutation",
+    "id": "XP_INT_UP",
+    "name": { "str": "XP - Intelligent" },
+    "points": 1,
+    "description": "Your muscles are a little stronger.  Dexterity + 1",
+    "changes_to": [ "INT_UP_2" ],
+    "passive_mods": { "int_mod": 1 }
+  },
+  {
+    "type": "mutation",
+    "id": "XP_INT_UP_2",
+    "name": { "str": "XP - Very Intelligent" },
+    "points": 2,
+    "description": "Your muscles are even stronger.  Dexterity + 2",
+    "prereqs": [ "INT_UP" ],
+    "passive_mods": { "int_mod": 2 }
+  },
+  {
+    "type": "mutation",
+    "id": "XP_INT_UP_3",
+    "name": { "str": "XP - Extremely Intelligent" },
+    "points": 4,
+    "visibility": 1,
+    "description": "Your muscles are much stronger.  Dexterity + 3",
+    "prereqs": [ "INT_UP_2" ],
+    "passive_mods": { "int_mod": 3 }
+  }
+  
+
+
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "xp_xps",
+    "type": "GENERIC",
+    "symbol": "x",
+    "color": "red",
+    "name": "XP",
+    "description": "An experience point.",
+    "volume": "1 ml",
+    "flags": [ "TRADER_AVOID", "NO_SALVAGE", "NO_REPAIR" ]
+  },
+  {
+    "abstract": "xp_upgrade",
+    "type": "GENERIC",
+    "category": "drugs",
+    "name": "XP Package",
+    "description": "A sadly required meta item, activate to unpack into materials to handle upgrading your character.",
+    "volume": "1 ml",
+	"weight": "1 g",
+    "symbol": "!",
+    "color": "blue",
+    "use_action": "DISASSEMBLE",
+    "flags": [ "NO_REPAIR" ]
+  },
+  {
+    "id": "xp_upgrade_tough_kit",
+    "type": "GENERIC",
+    "copy-from": "xp_upgrade",
+    "category": "drugs",
+    "name": "XP - Toughness Upgrade",
+    "description": "A sadly required meta item, activate to unpack into materials to handle upgrading your character with a tougher body."
+  },
+  {
+    "id": "xp_upgrade_tough_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Toughness",
+    "description": "A sadly required meta item, activate to handle upgrading your character with a tougher body.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_toughness", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },  
+  {
+    "id": "xp_upgrade_cannibal_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Cannibalism",
+    "description": "A sadly required meta item, activate to handle upgrading your character to not mind the long pig.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_cannibalism", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },  
+  {
+    "id": "xp_upgrade_thickskin_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Thick Skin",
+    "description": "A sadly required meta item, activate to handle upgrading your character to not mind the long pig.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_thickskin", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_strongerback_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Stronger Back",
+    "description": "A sadly required meta item, activate to handle upgrading your character to not mind the long pig.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_strongerback", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "result": "xp_upgrade_tough_kit",
+    "type": "uncraft",
+    "time": "6 s",
+    "components": [ [ [ "xp_upgrade_tough_item", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "xp_upgrade_sneaky1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Sneaky 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be more sneaky.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_sneaky_1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_roughing_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Roughing It",
+    "description": "A sadly required meta item, activate to handle upgrading your character to enjoy the rain and nature.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_roughingit", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_endurance1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Endurance 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to have greater endurance.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_endurance1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_noviceparkour_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Novice Parkour",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be a parkour novice.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_noviceparkour", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_str_up_1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - STR Up 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be a parkour novice.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_str_up_1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_str_up_2_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - STR Up 2",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be a parkour novice.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_str_up_2", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_str_up_3_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - STR Up 3",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be a parkour novice.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_str_up_3", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  }
+]
