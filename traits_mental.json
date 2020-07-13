@@ -6,7 +6,7 @@
     "description": "Face it, postapocalyptic life is pretty brutal and hard, you've grown tired of being such a squeamish little wuss and now don't mind indulging in long pig now and again.",
     "points": 1,
 	"valid": false,
-    "flags": [ "CANNIBAL" ]
+    "flags": [ "CANNIBAL", "PRED1" ]
   },
   {
     "type": "mutation",
@@ -16,7 +16,7 @@
     "description": "You're skilled at clearing obstacles; terrain like railings or counters are as easy for you to move on as solid ground.",
     "starting_trait": false,
     "valid": false,
-    "movecost_obstacle_modifier": 0.75
+    "movecost_obstacle_modifier": 0.85
   },
   {
     "type": "mutation",
@@ -30,18 +30,28 @@
   },
   {
     "type": "mutation",
-    "id": "XP_ORGANIZED",
-    "name": { "str": "XP - Organized" },
+    "id": "XP_ORGANIZED_1",
+    "name": { "str": "Organized I" },
     "points": 1,
-    "description": "You pack things very efficiently!  You can retrieve things from containers 20% faster.",
-    "obtain_cost_multiplier": 0.8,
+    "description": "You pack things very efficiently!  You can retrieve things from containers 15% faster.",
+    "obtain_cost_multiplier": 0.85,
     "starting_trait": false,
     "valid": false
   },
   {
     "type": "mutation",
-    "id": "XP_SLEEPLESS",
-    "name": { "str": "XP - Sleep Adaptation I" },
+    "id": "XP_ORGANIZED_2",
+    "name": { "str": "Organized II" },
+    "points": 1,
+    "description": "You pack things very efficiently!  You can retrieve things from containers 30% faster.",
+    "obtain_cost_multiplier": 0.70,
+    "starting_trait": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "XP_SLEEPLESS_1",
+    "name": { "str": "Sleep Adaptation I" },
     "points": 1,
     "description": "You have adapted to a more dangerous life in the apocalypse, you now need less sleep than the average person.",
     "types": [ "SLEEP" ],
@@ -50,29 +60,39 @@
   },
   {
     "type": "mutation",
-    "id": "XP_INT_UP",
-    "name": { "str": "XP - Intelligent" },
+    "id": "XP_SLEEPLESS_2",
+    "name": { "str": "Sleep Adaptation II" },
     "points": 1,
-    "description": "Your muscles are a little stronger.  Dexterity + 1",
+    "description": "You have adapted to a more dangerous life in the apocalypse, you now need a lot less sleep than the average person.",
+    "types": [ "SLEEP" ],
+    "starting_trait": false,
+    "fatigue_modifier": -0.20
+  },
+  {
+    "type": "mutation",
+    "id": "XP_INT_UP_1",
+    "name": { "str": "Intelligent" },
+    "points": 1,
+    "description": "You now brain better.  Intelligence + 1",
     "changes_to": [ "INT_UP_2" ],
     "passive_mods": { "int_mod": 1 }
   },
   {
     "type": "mutation",
     "id": "XP_INT_UP_2",
-    "name": { "str": "XP - Very Intelligent" },
+    "name": { "str": "Very Intelligent" },
     "points": 2,
-    "description": "Your muscles are even stronger.  Dexterity + 2",
+    "description": "You now brain even better.  Intelligence + 2",
     "prereqs": [ "INT_UP" ],
     "passive_mods": { "int_mod": 2 }
   },
   {
     "type": "mutation",
     "id": "XP_INT_UP_3",
-    "name": { "str": "XP - Extremely Intelligent" },
+    "name": { "str": "Extremely Intelligent" },
     "points": 4,
     "visibility": 1,
-    "description": "Your muscles are much stronger.  Dexterity + 3",
+    "description": "You now brain much harder.  Intelligence + 3",
     "prereqs": [ "INT_UP_2" ],
     "passive_mods": { "int_mod": 3 }
   }
