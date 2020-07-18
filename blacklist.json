@@ -2,6 +2,6 @@
   {
     "//": "remove traits so players can't start with them",
     "type": "TRAIT_BLACKLIST",
-    "traits": [ "ROBUST", "TOUGH", "THICKSKIN", "STRONGBACK", "" ]
+    "traits": [ "TOUGH", "THICKSKIN", "STRONGBACK" ]
   }
 ]

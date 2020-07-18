@@ -18,7 +18,6 @@
     "description": "You're not sure if it's the junk food or radiation, but all of this post apocalyptic survival stuff has really toughened you up!  You get a 20% bonus to all hit points.",
     "starting_trait": false,
     "valid": false,
-	"prereqs": [ "XP_TOUGH" ],
 	"cancels": [ "XP_TOUGH" ],
     "social_modifiers": { "intimidate": 2 },
     "hp_modifier": 0.2
@@ -31,7 +30,6 @@
     "description": "You're not sure if it's the junk food or radiation, but all of this post apocalyptic survival stuff has really toughened you up!  You get a 30% bonus to all hit points.",
     "starting_trait": false,
     "valid": false,
-	"prereqs": [ "XP_TOUGH_2" ],
 	"cancels": [ "XP_TOUGH_2" ],
     "social_modifiers": { "intimidate": 3 },
     "hp_modifier": 0.3
@@ -115,7 +113,6 @@
     "name": { "str": "Very Strong" },
     "points": 2,
     "description": "Your muscles are even stronger.  Strength + 2",
-    "prereqs": [ "XP_STR_UP_1" ],
 	"cancels": [ "XP_STR_UP_1" ],
     "passive_mods": { "str_mod": 2 }
   },
@@ -126,7 +123,6 @@
     "points": 3,
     "visibility": 1,
     "description": "Your muscles are much stronger.  Strength + 3",
-    "prereqs": [ "XP_STR_UP_2" ],
 	"cancels": [ "XP_STR_UP_2" ],
     "passive_mods": { "str_mod": 3 }
   },
@@ -145,7 +141,6 @@
     "name": { "str": "Very Dextrous" },
     "points": 2,
     "description": "Your muscles are even stronger.  Dexterity + 2",
-    "prereqs": [ "XP_DEX_UP" ],
 	"cancels": [ "XP_DEX_UP" ],
     "passive_mods": { "dex_mod": 2 }
   },
@@ -156,7 +151,6 @@
     "points": 4,
     "visibility": 1,
     "description": "Your muscles are much stronger.  Dexterity + 3",
-    "prereqs": [ "XP_DEX_UP_2" ],
 	"cancels": [ "XP_DEX_UP_2" ],
     "passive_mods": { "dex_mod": 3 }
   }
