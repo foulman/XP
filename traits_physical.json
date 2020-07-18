@@ -2,7 +2,7 @@
   {
     "type": "mutation",
     "id": "XP_TOUGH",
-    "name": { "str": " XP - Toughness" },
+    "name": { "str": "Toughness" },
     "points": 1,
     "description": "You're not sure if it's the junk food or radiation, but all of this post apocalyptic survival stuff has really toughened you up!  You get a 10% bonus to all hit points.",
     "starting_trait": false,
@@ -12,8 +12,34 @@
   },
   {
     "type": "mutation",
+    "id": "XP_TOUGH_2",
+    "name": { "str": "Toughness 2" },
+    "points": 1,
+    "description": "You're not sure if it's the junk food or radiation, but all of this post apocalyptic survival stuff has really toughened you up!  You get a 20% bonus to all hit points.",
+    "starting_trait": false,
+    "valid": false,
+	"prereqs": [ "XP_TOUGH" ],
+	"cancels": [ "XP_TOUGH" ],
+    "social_modifiers": { "intimidate": 2 },
+    "hp_modifier": 0.2
+  },
+  {
+    "type": "mutation",
+    "id": "XP_TOUGH_3",
+    "name": { "str": "Toughness 3" },
+    "points": 1,
+    "description": "You're not sure if it's the junk food or radiation, but all of this post apocalyptic survival stuff has really toughened you up!  You get a 30% bonus to all hit points.",
+    "starting_trait": false,
+    "valid": false,
+	"prereqs": [ "XP_TOUGH_2" ],
+	"cancels": [ "XP_TOUGH_2" ],
+    "social_modifiers": { "intimidate": 3 },
+    "hp_modifier": 0.3
+  },
+  {
+    "type": "mutation",
     "id": "XP_THICKSKIN",
-    "name": { "str": "XP - Thick-Skinned" },
+    "name": { "str": "Thick-Skinned" },
     "points": 1,
     "description": "Your skin has grown tougher from all the hard living.  Cutting and bash damage is slightly reduced for you.",
     "cancels": [ "THINSKIN" ],
@@ -28,7 +54,7 @@
   {
     "type": "mutation",
     "id": "XP_STRONGERBACK",
-    "name": { "str": "XP - Stronger Back" },
+    "name": { "str": "Stronger Back" },
     "description": "Hauling around all this junk like a nomadic hoarder has really given you a workout. You are now capable of carrying more than someone with similar strength could.  Your maximum weight carried is increased by 15%.",
     "points": 1,
 	"valid": false,
@@ -45,7 +71,7 @@
   },
   {
     "type": "mutation",
-    "id": "ROUGHING",
+    "id": "XP_ROUGHING",
     "name": { "str": "Roughing It" },
     "points": 1,
     "description": "You are accustomed to being exposed to the elements.  This decreases morale penalties for being wet.",
@@ -66,7 +92,7 @@
   },
   {
     "type": "mutation",
-    "id": "ENDURANCE1",
+    "id": "XP_ENDURANCE_1",
     "name": { "str": "Increased Endurance" },
     "points": 1,
     "description": "Whether due to exercise and good diet, or due to a natural propensity to physical endurance, you tire due to physical exertion much less readily than others.  Your maximum stamina is 15% higher than usual.",
@@ -77,7 +103,7 @@
   {
     "type": "mutation",
     "id": "XP_STR_UP_1",
-    "name": { "str": "XP - Stronger" },
+    "name": { "str": "Stronger" },
     "points": 1,
     "description": "Your muscles are a little stronger.  Strength + 1",
     "changes_to": [ "STR_UP_2" ],
@@ -86,26 +112,28 @@
   {
     "type": "mutation",
     "id": "XP_STR_UP_2",
-    "name": { "str": "XP - Very Strong" },
+    "name": { "str": "Very Strong" },
     "points": 2,
     "description": "Your muscles are even stronger.  Strength + 2",
-    "prereqs": [ "STR_UP" ],
+    "prereqs": [ "XP_STR_UP_1" ],
+	"cancels": [ "XP_STR_UP_1" ],
     "passive_mods": { "str_mod": 2 }
   },
   {
     "type": "mutation",
     "id": "XP_STR_UP_3",
-    "name": { "str": "XP - Extremely Strong" },
+    "name": { "str": "Extremely Strong" },
     "points": 3,
     "visibility": 1,
     "description": "Your muscles are much stronger.  Strength + 3",
-    "prereqs": [ "STR_UP_2" ],
+    "prereqs": [ "XP_STR_UP_2" ],
+	"cancels": [ "XP_STR_UP_2" ],
     "passive_mods": { "str_mod": 3 }
   },
   {
     "type": "mutation",
     "id": "XP_DEX_UP",
-    "name": { "str": "XP - Dextrous" },
+    "name": { "str": "Dextrous" },
     "points": 1,
     "description": "Your muscles are a little stronger.  Dexterity + 1",
     "changes_to": [ "DEX_UP_2" ],
@@ -114,20 +142,22 @@
   {
     "type": "mutation",
     "id": "XP_DEX_UP_2",
-    "name": { "str": "XP - Very Dextrous" },
+    "name": { "str": "Very Dextrous" },
     "points": 2,
     "description": "Your muscles are even stronger.  Dexterity + 2",
-    "prereqs": [ "DEX_UP" ],
+    "prereqs": [ "XP_DEX_UP" ],
+	"cancels": [ "XP_DEX_UP" ],
     "passive_mods": { "dex_mod": 2 }
   },
   {
     "type": "mutation",
     "id": "XP_DEX_UP_3",
-    "name": { "str": "XP - Extremely Dextrous" },
+    "name": { "str": "Extremely Dextrous" },
     "points": 4,
     "visibility": 1,
     "description": "Your muscles are much stronger.  Dexterity + 3",
-    "prereqs": [ "DEX_UP_2" ],
+    "prereqs": [ "XP_DEX_UP_2" ],
+	"cancels": [ "XP_DEX_UP_2" ],
     "passive_mods": { "dex_mod": 3 }
   }
 
