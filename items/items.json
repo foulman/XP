@@ -2,12 +2,44 @@
   {
     "id": "xp_xps",
     "type": "GENERIC",
-    "symbol": "x",
+    "symbol": "X",
     "color": "red",
     "name": "XP",
     "description": "An experience point.",
     "volume": "1 ml",
     "flags": [ "TRADER_AVOID", "NO_SALVAGE", "NO_REPAIR" ]
+  },
+  {
+    "id": "xp_give_random",
+	"type": "SPELL",
+	"name": "Template Spell",
+	"description": "This is a template to show off all the available values",
+	"valid_targets": [ "self" ],
+	"effect": "spawn_item",
+	"effect_str": "xp_xps",
+	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "PERMANENT", "RANDOM_DAMAGE" ],
+	"max_level": 1,
+	"min_damage": 1,
+	"max_damage": 3
+  },
+  {
+    "id": "xp_giver",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "EXP" },
+    "description": "A pseudo item to give the player xps simply for staying alive over time.",
+    "symbol": "X",
+    "color": "red",
+	"volume": "1 ml",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "24 hours", "spell_effects": [ { "id": "xp_give_random" } ] } ] }
+        }
+      ]
+    },
+    "flags": [ "ONLY_ONE", "NO_TAKEOFF" ]
   },
   {
     "abstract": "xp_upgrade",
@@ -163,6 +195,36 @@
     "name": "XP Trait - STR Up 3",
     "description": "A sadly required meta item, activate to handle upgrading your character to be considerably stronger.",
     "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_str_up_3", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_dex_up_1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Dex Up 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be dexonger.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_dex_up_1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_dex_up_2_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Dex Up 2",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be even dexonger.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_dex_up_2", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_dex_up_3_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Dex Up 3",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be considerably dexonger.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_dex_up_3", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]

@@ -219,6 +219,57 @@
 	"max_level": 1,
 	"min_damage": 10000,
 	"max_damage": 10000
+  },
+  {
+    "id": "xp_upgrade_spell_dex_up_1",
+	"type": "SPELL",
+	"name": "Add DEX Up 1",
+	"description": "XP Spell that gives Dexterity 1 trait.",
+	"valid_targets": [ "self" ],
+	"effect": "mutate",
+	"effect_dex": "XP_DEX_UP_1",
+	"flags": [ "MUTATE_TRAIT", "SILENT" ],
+	"energy_source": "MANA",
+	"base_casting_time": 1,
+    "final_casting_time": 1,
+	"difficulty": 0,
+	"max_level": 1,
+	"min_damage": 10000,
+	"max_damage": 10000
+  },
+  {
+    "id": "xp_upgrade_spell_dex_up_2",
+	"type": "SPELL",
+	"name": "Add DEX Up 2",
+	"description": "XP Spell that gives Dexterity 2 trait.",
+	"valid_targets": [ "self" ],
+	"effect": "mutate",
+	"effect_dex": "XP_DEX_UP_2",
+	"flags": [ "MUTATE_TRAIT", "SILENT" ],
+	"energy_source": "MANA",
+	"base_casting_time": 1,
+    "final_casting_time": 1,
+	"difficulty": 0,
+	"max_level": 1,
+	"min_damage": 10000,
+	"max_damage": 10000
+  },
+  {
+    "id": "xp_upgrade_spell_dex_up_3",
+	"type": "SPELL",
+	"name": "Add DEX up 3",
+	"description": "XP Spell that gives Dexterity 3 trait.",
+	"valid_targets": [ "self" ],
+	"effect": "mutate",
+	"effect_dex": "XP_DEX_UP_3",
+	"flags": [ "MUTATE_TRAIT", "SILENT" ],
+	"energy_source": "MANA",
+	"base_casting_time": 1,
+    "final_casting_time": 1,
+	"difficulty": 0,
+	"max_level": 1,
+	"min_damage": 10000,
+	"max_damage": 10000
   }
   
   
