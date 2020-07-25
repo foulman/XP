@@ -51,25 +51,25 @@
 	"valid": false,
 	"mixed_effect": true,
 	"prereqs": [ "GLITTERING" ],
-    "movecost_modifier": 1.4,
+    "movecost_modifier": 1.5,
 	"healing_resting": -0.9,
 	"mending_modifier": 0.1,
     "bleed_resist": 1000,
 	"fat_to_max_hp": 10.0,
 	"movecost_swim_modifier": 10.0,
 	"weight_capacity_modifier": 1.15,
-	"can_heal_with": [ "mineral_glue" ],
+	"can_only_heal_with": [ "mineral_glue" ],
 	"flags": [ "NO_DISEASE", "NO_INFECTION", "NO_POISON", "NO_RADIATION", "NO_PARASITE" ],
 	"armor": [
       {
         "parts": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "mouth", "eyes", "head" ],
-        "cut": 45,
-		"pierce": 45,
+        	"cut": 30,
+		"pierce": 30,
 		"bash": 15,
 		"ballistic": 15,
-		"fire": 45,
-		"acid": 45,
-		"electricity": 45
+		"fire": 30,
+		"acid": 30,
+		"electricity": 30
       }
     ]
   },
