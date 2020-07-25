@@ -139,7 +139,7 @@
     "id": "xp_upgrade_spell_str_up",
 	"type": "SPELL",
 	"name": "Add Str Up",
-	"description": "XP Spell that gives Dex Up traits.",
+	"description": "XP Spell that gives Str Up traits.",
 	"valid_targets": [ "self" ],
 	"effect": "mutate",
 	"effect_str": "XP_STR_UP_CATEGORY",
