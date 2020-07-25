@@ -166,5 +166,113 @@
     "time": "5 m",
     "flags": [ "BLIND_EASY" ],
     "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_int_up_1_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 300 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_int_up_2_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 600 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_int_up_3_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 900 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_per_up_1_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 300 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_per_up_2_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 600 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_per_up_3_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 900 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_sleepless_1_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 300 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_sleepless_2_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 600 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_sleepless_3_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_MENTAL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 900 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
   }
 ]

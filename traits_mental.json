@@ -70,6 +70,16 @@
   },
   {
     "type": "mutation",
+    "id": "XP_SLEEPLESS_3",
+    "name": { "str": "Sleep Adaptation III" },
+    "points": 1,
+    "description": "You have adapted to a more dangerous life in the apocalypse, you now need a lot less sleep than the average person.",
+    "types": [ "SLEEP" ],
+    "starting_trait": false,
+    "fatigue_modifier": -0.30
+  },
+  {
+    "type": "mutation",
     "id": "XP_INT_UP_1",
     "name": { "str": "Intelligent" },
     "points": 1,
@@ -95,6 +105,34 @@
     "description": "You now brain much harder.  Intelligence + 3",
     "prereqs": [ "INT_UP_2" ],
     "passive_mods": { "int_mod": 3 }
+  },
+  {
+    "type": "mutation",
+    "id": "XP_PER_UP_1",
+    "name": { "str": "Perceptive" },
+    "points": 1,
+    "description": "You now brain better.  Perception + 1",
+    "changes_to": [ "PER_UP_2" ],
+    "passive_mods": { "per_mod": 1 }
+  },
+  {
+    "type": "mutation",
+    "id": "XP_PER_UP_2",
+    "name": { "str": "Very Perceptive" },
+    "points": 2,
+    "description": "You now brain even better.  Perception + 2",
+    "prereqs": [ "PER_UP" ],
+    "passive_mods": { "per_mod": 2 }
+  },
+  {
+    "type": "mutation",
+    "id": "XP_PER_UP_3",
+    "name": { "str": "Extremely Perceptive" },
+    "points": 4,
+    "visibility": 1,
+    "description": "You now brain much harder.  Perception + 3",
+    "prereqs": [ "PER_UP_2" ],
+    "passive_mods": { "per_mod": 3 }
   }
   
 

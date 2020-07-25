@@ -228,5 +228,95 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_int_up_1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Int Up 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be smarter.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_int_up_1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_int_up_2_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Int Up 2",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be even smarter.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_int_up_2", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_int_up_3_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Int Up 3",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be considerably smarter.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_int_up_3", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_per_up_1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Per Up 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be more perceptive.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_per_up_1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_per_up_2_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Per Up 2",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be even more perceptive.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_per_up_2", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_per_up_3_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Per Up 3",
+    "description": "A sadly required meta item, activate to handle upgrading your character to be considerably more perceptive.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_per_up_3", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_sleepless_1_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Sleepless 1",
+    "description": "A sadly required meta item, activate to handle upgrading your character to need less sleep.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_sleepless_1", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_sleepless_2_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Sleepless 2",
+    "description": "A sadly required meta item, activate to handle upgrading your character to need even less sleep.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_sleepless_2", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "xp_upgrade_sleepless_3_item",
+    "copy-from": "xp_upgrade",
+    "name": "XP Trait - Sleepless 3",
+    "description": "A sadly required meta item, activate to handle upgrading your character to need considerably less sleep.",
+    "use_action": { "type": "cast_spell", "spell_id": "xp_upgrade_spell_sleepless_3", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "flags": [ "TRADER_AVOID", "INEDIBLE", "NUTRIENT_OVERRIDE" ]
   }
 ]
