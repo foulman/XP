@@ -4,7 +4,7 @@
     "id": "CC_XP",
     "recipe_subcategories": [
       "CSC_ALL",
-      "CSC_XP_GEAR",
+	  "CSC_XP_LEVEL",
       "CSC_XP_MENTAL",
       "CSC_XP_PHYSICAL",
 	  "CSC_XP_COMBAT",

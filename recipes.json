@@ -154,5 +154,17 @@
     "time": "5 m",
     "flags": [ "BLIND_EASY" ],
     "autolearn": [ [ "fabrication", 0 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "xp_upgrade_levelup_1_item",
+    "category": "CC_XP",
+    "subcategory": "CSC_XP_LEVEL",
+    "skills_required": [ "fabrication", 0 ],
+	"components": [ [ [ "xp_xps", 500 ] ] ],
+    "difficulty": 0,
+    "time": "5 m",
+    "flags": [ "BLIND_EASY" ],
+    "autolearn": [ [ "fabrication", 0 ] ]
   }
 ]

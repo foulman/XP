@@ -219,6 +219,23 @@
 	"max_level": 1,
 	"min_damage": 10000,
 	"max_damage": 10000
+  },
+  {
+    "id": "xp_upgrade_spell_levelup",
+	"type": "SPELL",
+	"name": "Level Up",
+	"description": "XP Spell that levels the player up.",
+	"valid_targets": [ "self" ],
+	"effect": "mutate",
+	"effect_str": "XP_LEVEL_CATEGORY",
+	"flags": [ "SILENT" ],
+	"energy_source": "MANA",
+	"base_casting_time": 1,
+    "final_casting_time": 1,
+	"difficulty": 0,
+	"max_level": 1,
+	"min_damage": 10000,
+	"max_damage": 10000
   }
   
 
