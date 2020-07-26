@@ -203,7 +203,7 @@
   },
   {
     "type": "mutation",
-    "id": "XP_DEX_UP",
+    "id": "XP_DEX_UP_1",
     "name": { "str": "Dextrous" },
     "points": 1,
     "description": "Your reflexes have improved.  Dexterity + 1",
