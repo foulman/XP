@@ -2,7 +2,8 @@
   {
     "id": "xp_xps",
     "type": "GENERIC",
-    "symbol": "X",
+    "category": "spare_parts",
+	"symbol": "X",
     "color": "red",
     "name": "XP",
     "description": "An experience point.",
@@ -18,9 +19,9 @@
 	"effect": "spawn_item",
 	"effect_str": "xp_xps",
 	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "PERMANENT", "RANDOM_DAMAGE" ],
-	"max_level": 1,
 	"min_damage": 1,
-	"max_damage": 3
+	"max_damage": 5,
+	"damage_increment": 1
   },
   {
     "id": "xp_giver",
@@ -35,7 +36,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "intermittent_activation": { "effects": [ { "frequency": "24 hours", "spell_effects": [ { "id": "xp_give_random" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "2 days", "spell_effects": [ { "id": "xp_give_random" } ] } ] }
         }
       ]
     },
