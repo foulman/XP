@@ -8,7 +8,7 @@
     "name": "XP",
     "description": "An experience point.",
     "volume": "1 ml",
-    "flags": [ "TRADER_AVOID", "NO_SALVAGE", "NO_REPAIR" ]
+    "flags": [ "TRADER_AVOID", "NO_SALVAGE", "NO_REPAIR", "ZERO_WEIGHT" ]
   },
   {
     "id": "xp_give_random",
@@ -40,7 +40,7 @@
         }
       ]
     },
-    "flags": [ "ONLY_ONE", "NO_TAKEOFF" ]
+    "flags": [ "ONLY_ONE", "NO_TAKEOFF", "ZERO_WEIGHT" ]
   },
   {
     "abstract": "xp_upgrade",
